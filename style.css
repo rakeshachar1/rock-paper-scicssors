@@ -251,7 +251,6 @@ button {
 }
 
 #next {
-  display: flex;
   padding: 8px 30px;
   position: absolute;
   top: 234px;
