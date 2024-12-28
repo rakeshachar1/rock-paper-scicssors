@@ -119,7 +119,7 @@ function calculateWinner(user, ai) {
     localStorage.setItem("playerScore", PLAYER_SCORE);
     player_score_display.textContent = PLAYER_SCORE;
     updateUI(user, "You Win!", ai);
-    if (PLAYER_SCORE > 15) {
+    if (PLAYER_SCORE >= 15) {
       next_button.classList.remove("hide");
     }
     hidePropertiesForOneEndIds();
