@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="heading-container">
+            <h2>Rock <br> Paper <br> Scissors</h2>
+            <div class="score-group">
+                <div class="score-container ai-score">
+                    <p><pre>Computer<br>Score</pre></p>
+                    <div id="ai-score">0</div>
+                </div>
+                <div class="score-container">
+                    <p><pre>Your<br>Score</pre></p>
+                    <div id="player-score">0</div>
+                </div>
+            </div>
+        </div>
+       <div class="gameCont">
+        <div class="game-container choices">
+            <div id="rock" class="selectable rock">
+                <img
+                src="https://s3-alpha-sig.figma.com/img/e2f5/14e9/7d8f1b87d406a7bced07190e2c368075?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KcE7VkyGcR1Z10wHmK5opinhh-3XDH4DvZvdFs-2KH4y9~tSJRTduQ8P2bJjg9VOheY4SlD22JH51X3WKJKdjlnIfmewZBNYZYai50sVMlaT0gAy15J6Fn73H66~FCshoP8dchVfJdchJJlRguuZygLPqu7dpzEys5v6dVOF7qBc24HLgQxVFp~nOaTrgICC1YqCYzlEWE9EBcuDwdulanSesrzTZQCJ-GjNpUNSl~Jk2hVrrM8ncQjB11De-sVKR5NZid7F3j0RWJwpqBogJnehBq2Saoe8ZBNd6JhyQIQ3ZSYAKQFJROu-uCSELztaMDf4sysNsKhcaGa1FQ8nYw__"
+                alt=""
+              />
+            </div>
+            
+            <div class="line"></div>
+
+            <div id="paper" class="selectable paper">
+                <img
+                src="https://s3-alpha-sig.figma.com/img/9e58/4d5f/879bf162796082bc4c606349436e0c52?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JSLuq4YZ1QOQDHzdkLtIrTB~i-WHQtoRfsIBIrCl9Zyd5qM-btlKJiZJiVuVgxlasfKuVZaAOZMgiKXCJYBAZEG4jhE-nxvEULoqH2MoAKjN2kBX~1WqKOGAFsMzvyRqV93w9rlT3fugly-fssohCTPLAMAJmZh8iFrBls47zt4y0S6vZARdkhZh5GMxmlCx~gIvLjIwP26yihbzfyQ1f-kdneks50VnHqK9HJ~DTHnTjqWMT6DBBuV44UgybYxz8jobSF6asXIMpPGSrLRnrdiBkswcBDrsAw67aHgoabeIRfoezZ2ln9nka4FILHeV6E8UcgSwJCN3IlcGLGlP6Q__"
+                alt=""
+              />
+            </div>
+            <div class="line1"></div>
+    
+        </div>
+        
+            <div class="game-container choice2" >
+            <div id="scissors" class="selectable scissors">
+                <img
+                src="https://s3-alpha-sig.figma.com/img/388b/63da/8e9ba336eea3ea7f107fc48755a6b68d?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Lk-z~6qJim-ZI4M1ic6nKljubcbhRn-7yl0T8nymAJym9sDRhAbmhqXYNQZhMsJb1A4U4wuw6fJmWVVBuSdEnWisEZ7QLV~9ETWD7Ph9JwM3Ze7KhFpQTtKYK5HeWKuuow-LXxv77m4Mbj-jgmj7lY0CkfeIGdBNf43Eos9yy2YLSFz1jr3BbE3y3JyuAo-79ydA9JZqFRyfXTa9y1cz7kpRhIVU5RzSqD6LmAbhuwuBTNNf-w0fyAh9Ge29YKfyrhx3tGrY1rG59Z96EpGHfORQZ2Xv9yz7c65Bv045KnbhJEzFwBdKjdUnO2hxdK5S4Ldsz26n2GKTSJzBe0t-Cg__"
+                alt=""
+              />
+            </div>
+            <div class="line2"></div>
+        </div>
+        </div>
+    </div>
+        <div class="winner-container hide">
+          <div class="ball1">
+          <p id="us">You picked</p>
+          <p id="ai">PC picked</p>
+        </div>
+          <div class="winnerCont">
+            
+            <div class="selected" id="hidden">
+                <div id ="out0" class="outer-circle">
+                    <div id="mid0"     class="mid-circle">
+                        <div id="in0"    class="inner-circle">
+                <div id="user-results" class="selectable"></div>
+                
+            </div>
+            </div>
+            </div>
+        </div>
+            <div class="selected">
+              
+              <div id="out1"    class="outer-circle">
+                <div id="mid1"   class="mid-circle">
+                    <div id="in1" class="inner-circle">
+            <div id="ai-results" class="selectable"></div>
+        </div>
+        </div>
+        </div>                
+            </div>
+          </div>
+            <div class="outcome">
+                <h2 id="won-text"></h2>
+                <button id="next" class="hide">Next</button>
+                <button id="reset">Play Again</button>
+            </div>
+        </div>
+            <div class="hurray-container hide">
+                <div class="one">
+                <img src="Group 5 (1).png" alt="" />
+            </div>
+                <div class="cup">
+                  <img src="Vector.png" alt="" />
+                </div>
+              
+              <div class="wonBox">
+                <h1>HURRAY!!</h1>
+                <h3>YOU WON THE GAME</h3>
+                <button id="play-again">PLAY AGAIN</button>
+              </div>
+              
+              </div>
+            <div class="rules">
+                <div class="ruleBut">
+                  <button id="c21" class="rule">RULES</button>
+                </div>
+        
+                <div class="ruleCont">
+                  <div class="ruleBox">
+                 <div class="ruleContent">Game Rules</div>
+                    <div>
+                      <ul>
+                        <li>
+                          Rock beats scissors, scissors beat paper, and paper beats
+                          rock.
+                        </li>
+                        <li>
+                          Agree ahead of time whether you'll count of "rock, paper,
+                          scissors, shoot" or just "rock, paper, scissors."
+                        </li>
+                        <li>
+                          Use rock, paper, scissors to settle minor decisions or simply
+                          play to pass the time
+                        </li>
+                        <li>
+                          If both players lay down the same hand, each player lays down
+                          another hand
+                        </li>
+                      </ul>
+                    </div> 
+                    <div class="close">x</div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+    </div>
+    
+</body>
+</html>
