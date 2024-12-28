@@ -486,6 +486,3 @@ li {
   display: block;
 }
 
-button:hover {
-  transform: scale(1.1);
-}
