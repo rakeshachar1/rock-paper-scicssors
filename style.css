@@ -253,7 +253,7 @@ button {
 #next {
   padding: 8px 30px;
   position: absolute;
-  top: 234px;
+  top: 218px;
   right: 16px;
   background-color: transparent;
   cursor: pointer;
@@ -398,7 +398,7 @@ h3 {
   transform: translate(-121px, 120px);
 }
 #c21 {
-  transform: translate(-116px, 121px);
+  transform: translate(-116px, 105px);
 }
 .ruleCont {
   display: flex;
@@ -485,4 +485,3 @@ li {
 .open {
   display: block;
 }
-
